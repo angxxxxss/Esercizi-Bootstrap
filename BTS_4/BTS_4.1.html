@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>rocket league</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  </head>
+  <body class="bg-light">
+    <header class="container py-4">
+      <nav class="navbar navbar-light bg-white rounded shadow-sm">
+        <div class="container-fluid">
+          <a class="navbar-brand fw-bold" href="#">RL</a>
+          <!-- navbar statica (no JS) -->
+          <ul class="nav">
+            <li class="nav-item"><a class="nav-link active" href="#">Home <span class="badge bg-secondary ms-1">4</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Altro</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container">
+      <div class="row g-4">
+
+        <!-- Card con Badge -->
+        <section class="col-12 col-md-6">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">
+                Messaggi
+                <span class="badge bg-primary ms-2">Nuovi</span>
+              </h5>
+              <p class="card-text">Questo è un esempio di card con un badge che indica lo stato.</p>
+              <a href="#" class="btn btn-sm btn-outline-primary">Apri</a>
+            </div>
+          </div>
+        </section>
+
+        <!-- List Group con badge sulla destra -->
+        <section class="col-12 col-md-6">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h6 class="card-title">Attività</h6>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  Prima attività
+                  <span class="badge bg-success rounded-pill">3</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  Seconda attività
+                  <span class="badge bg-warning text-dark rounded-pill">1</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  Terza attività
+                  <span class="badge bg-secondary rounded-pill">5</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Pagination -->
+        <section class="col-12">
+          <nav aria-label="Paginazione esempio">
+            <ul class="pagination justify-content-center">
+              <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1">Precedente</a></li>
+              <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">Successivo</a></li>
+            </ul>
+          </nav>
+        </section>
+
+        <!-- Collapse nativo usando <details> (senza JS) -->
+        <section class="col-12 col-md-6">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h6 class="card-title">Informazioni aggiuntive</h6>
+              <details class="mt-2">
+                <summary class="fw-semibold">Mostra / Nascondi dettagli</summary>
+                <p class="mt-2 mb-0">Questo utilizza l'elemento HTML <code>&lt;details&gt;</code> per comportamento "collapse" nativo, senza JS.</p>
+              </details>
+            </div>
+          </div>
+        </section>
+
+        <!-- Esempio di List Group separato -->
+        <section class="col-12 col-md-6">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h6 class="card-title">Contatti</h6>
+              <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                  Gabriele Wasef
+                  <span class="badge bg-primary rounded-pill">Online</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                  Mattheus Villanueva
+                  <span class="badge bg-secondary rounded-pill">Offline</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                  Angelo Franco
+                  <span class="badge bg-danger rounded-pill">1</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </main>
+
+    <footer class="container py-4">
+      <div class="text-center text-muted small">Esempio Bootstrap - Solo HTML (nessun JS)</div>
+    </footer>
+  </body>
+</html>
